@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+@page { size: 1080px 1440px; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #ddd; }
+body { font-family: "Noto Serif CJK SC", "Songti SC", serif; color: #0a0a0b; }
+.card { width:1080px; height:1440px; position:relative; overflow:hidden; background:#f3f0e8; padding:92px 92px 78px; display:flex; flex-direction:column; }
+.card:before { content:""; position:absolute; inset:26px; border:1px solid rgba(10,10,11,.18); pointer-events:none; }
+.card:after { content:""; position:absolute; left:92px; right:92px; top:38%; border-top:1px solid rgba(10,10,11,.12); box-shadow:0 360px 0 rgba(10,10,11,.10); pointer-events:none; }
+.grain { position:absolute; inset:0; opacity:.09; pointer-events:none; background-image: radial-gradient(rgba(30,20,10,.4) .45px, transparent .55px); background-size:5px 5px; mix-blend-mode:multiply; }
+.top { position:relative; z-index:1; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(10,10,11,.28); padding-bottom:20px; font-family:"Noto Sans CJK SC", sans-serif; font-size:22px; letter-spacing:.18em; color:#68625a; }
+.kicker { color:#9b5a2e; }
+.issue { letter-spacing:.06em; }
+.main { position:relative; z-index:1; flex:1; display:flex; flex-direction:column; justify-content:center; }
+.main:before { content:""; position:absolute; left:0; top:10%; bottom:10%; width:1px; background:rgba(155,90,46,.32); }
+.cover .main { justify-content:flex-start; padding-top:160px; }
+.eyebrow { font-family:"Noto Sans CJK SC",sans-serif; font-size:25px; letter-spacing:.15em; color:#68625a; margin-bottom:42px; }
+h1 { font-weight:400; font-size:104px; line-height:1.32; letter-spacing:-.04em; margin:0; max-width:760px; }
+.cover h1 { font-size:112px; }
+.accent { color:#9b5a2e; }
+.lead { margin-top:52px; font-size:40px; line-height:1.75; color:#68625a; max-width:720px; }
+.rule { margin-top:74px; width:170px; border-top:4px solid #9b5a2e; }
+.dialogue { position:relative; z-index:1; max-width:850px; }
+.scene { font-family:"Noto Sans CJK SC",sans-serif; font-size:23px; color:#9b5a2e; letter-spacing:.16em; margin-bottom:40px; }
+.speaker { font-family:"Noto Sans CJK SC",sans-serif; font-size:30px; letter-spacing:.1em; color:#68625a; margin-bottom:25px; }
+.line { font-size:100px; line-height:1.48; letter-spacing:-.04em; margin:0; max-width:730px; }
+.subline { margin-top:45px; padding-top:24px; border-top:1px solid rgba(10,10,11,.25); font-size:27px; line-height:1.7; color:#68625a; max-width:760px; }
+.quote-mark { position:absolute; right:0; top:-80px; color:rgba(155,90,46,.22); font-size:220px; line-height:1; font-family:Georgia,serif; }
+.dialogue:after { content:"WEEKLY / OFFICE / NOTES"; position:absolute; right:-30px; bottom:-150px; writing-mode:vertical-rl; font-family:"Noto Sans CJK SC",sans-serif; font-size:18px; letter-spacing:.22em; color:rgba(104,98,90,.7); }
+.bottom { position:relative; z-index:1; display:flex; justify-content:space-between; align-items:end; border-top:1px solid rgba(10,10,11,.28); padding-top:18px; font-family:"Noto Sans CJK SC",sans-serif; font-size:21px; color:#68625a; letter-spacing:.08em; }
+.page { color:#9b5a2e; }
+.footer-note { font-size:24px; line-height:1.65; max-width:760px; color:#68625a; }
+.summary .main { justify-content:flex-start; padding-top:90px; }
+.cover .main:after { content:"写周报的人，最后都在给别人提供叙事素材。"; position:absolute; right:10px; bottom:30px; font-family:"Noto Serif CJK SC",serif; font-size:28px; line-height:1.8; writing-mode:vertical-rl; letter-spacing:.08em; color:rgba(104,98,90,.72); }
+.summary .main:after { content:"写完周报，别忘了看看署名。"; position:absolute; right:35px; bottom:30px; writing-mode:vertical-rl; font-family:"Noto Serif CJK SC",serif; font-size:28px; line-height:1.8; letter-spacing:.08em; color:rgba(155,90,46,.62); }
+.summary h2 { font-size:56px; font-weight:400; line-height:1.3; margin:0 0 60px; }
+.summary .item { border-top:1px solid rgba(10,10,11,.25); padding:38px 0; font-size:38px; line-height:1.65; max-width:820px; }
+.cta { margin-top:68px; font-size:46px; line-height:1.65; }
+</style>
+</head>
+<body>
+<section class="card cover"><div class="grain"></div><div class="top"><span class="kicker">办公室观察</span><span class="issue">WEEKLY REPORT / 01</span></div><div class="main"><div class="eyebrow">刚上班的人，最熟悉的一句话</div><div class="speaker">林姐</div><p class="line">“王哥，领导让你写周报，说是方便他了解工作。”</p><div class="lead">后来王哥才发现，周报最方便了解的，是领导怎么汇报。</div><div class="rule"></div></div><div class="bottom"><span>虚构人物：王哥 × 林姐</span><span class="page">01 / 05</span></div></section>
+<section class="card"><div class="grain"></div><div class="top"><span class="kicker">周一 · 09:12</span><span class="issue">OFFICE DIALOGUE</span></div><div class="main"><div class="dialogue"><div class="scene">林姐把周报模板发了过来</div><div class="speaker">林姐</div><p class="line">“王哥，领导说以后每周都要写周报，方便他了解大家的工作。”</p><div class="subline">听起来很合理，合理到像一场即将开始的加班。</div></div></div><div class="bottom"><span>职场段子 · 对话 01</span><span class="page">02 / 05</span></div></section>
+<section class="card"><div class="grain"></div><div class="top"><span class="kicker">周五 · 17:48</span><span class="issue">OFFICE DIALOGUE</span></div><div class="main"><div class="dialogue"><div class="scene">王哥第一次认真写了周报</div><div class="speaker">王哥</div><p class="line">“我写完了，按要求把本周做的事、遇到的问题和下周计划都写上了。”</p><div class="subline">甚至还顺手把数据、截图和链接都整理好了。</div></div></div><div class="bottom"><span>职场段子 · 对话 02</span><span class="page">03 / 05</span></div></section>
+<section class="card"><div class="grain"></div><div class="top"><span class="kicker">下周一 · 10:06</span><span class="issue">OFFICE DIALOGUE</span></div><div class="main"><div class="dialogue"><div class="scene">领导在会上展示了一页熟悉的内容</div><div class="speaker">林姐</div><p class="line">“王哥，这不是你上周写的周报吗？怎么变成领导的汇报材料了？”</p><div class="subline">王哥沉默了，因为那张图连标点符号都没改。</div></div></div><div class="bottom"><span>职场段子 · 对话 03</span><span class="page">04 / 05</span></div></section>
+<section class="card summary"><div class="grain"></div><div class="top"><span class="kicker">结论 · 公开的秘密</span><span class="issue">WEEKLY REPORT / END</span></div><div class="main"><div class="dialogue"><div class="scene">周报交上去后的下一个周一</div><div class="speaker">王哥</div><p class="line">“我终于明白了，周报不是写给领导看的，是写给领导上台看的。”</p><div class="subline">刚上班时不懂，后来连自己的标点都认出来了。</div></div></div><div class="bottom"><span>人物均为虚构，场景纯属巧合</span><span class="page">05 / 05</span></div></section>
+</body></html>
